@@ -8,7 +8,8 @@ class BirthdayCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // 기본동작이 parent 를 fit 하게 expend 함
+    // child 가 없을 경우 parent 에게 fit 하게 맞춰짐
+    // child 가 있을 경우 child 에게 fit 하게 맞춰짐
     return Container(
       padding: const EdgeInsets.all(24.0),
       // Column 은 기본적으로 부모의 height 에 fit 하게 expend 한다.
