@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_birthday_card/birthday_card.dart';
+import 'package:flutter_birthday_card/birthday_card_page_view.dart';
 
 void main() {
   runApp(const MyApp(name: "Kim"));
@@ -20,11 +20,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Scaffold(
-        body: BirthdayCard(
-          to: 'Kim',
-          from: 'Emma',
-        ),
+      home: Scaffold(
+        body: BirthdayCardPageView(),
       ),
     );
   }
